@@ -1,0 +1,185 @@
+/* Navbar styles */
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  /* Navbar container styles */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+  }
+  
+  /* Navbar brand styles */
+  .navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Navbar menu styles */
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar item styles */
+  .navbar-item {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  /* Navbar link styles */
+  .navbar-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-link:hover {
+    color: #007bff;
+  }
+  
+  /* Navbar dropdown styles */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  
+  .dropdown-menu li {
+    display: block;
+  }
+  
+  .dropdown-menu li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Show dropdown on hover */
+  .navbar-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .banner {
+    height: 200px;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .train {
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    animation: trainMove 10s linear infinite;
+  }
+  
+  .train-carriage {
+    width: 80px;
+    height: 50px;
+    background-color: #423e3e;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .engine {
+    background-color: #333333;
+  }
+  
+  .wheel {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #333333;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+  }
+  
+  .track {
+    height: 10px;
+    background-color: #333333;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+  }
+  
+  @keyframes trainMove {
+    0% {
+      transform: translateX(-1200px);
+    }
+    100% {
+      transform: translateX(calc(100% + 1200px));
+    }
+  }
+
+  /* From Section 1 */
+  .section {
+    display: flex;
+    justify-content: center;
+    background-color: #cccccc;
+    padding: 50px 0;
+  }
+  
+  .section-grid {
+    width: 50%;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label, input, select {
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 200px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #666666;
+  }
+    

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goawale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="navbar">
+            <div class="navbar-container">
+              <a href="#" class="navbar-brand">GOA-WALE.COM</a>
+              <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+                <li class="navbar-item dropdown">
+                  <a href="#" class="navbar-link dropdown-toggle">Tourist Spots</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Goa</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Shimla</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Manali</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Rishikesh</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Jaipur</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Assam</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link"></a></li>
+                  </ul>
+                </li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Hotels</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Train Running -->
+          <div class="banner">
+            <div class="train">
+              <div class="train-carriage"></div>
+              <div class="train-carriage"></div>
+              <div class="train-carriage"></div>
+              <div class="train-carriage"></div>
+              <div class="train-carriage"></div>
+              <div class="train-carriage"></div>
+              <div class="train-carriage"></div>
+            </div>
+          </div>
+
+          <!-- Section 1 with calendar and form -->
+          <div class="section">
+            <div class="section-grid">
+              <h1>LET'S DIVE INTO WORLD</h1>
+            </div>
+            <div class="section-grid">
+              <form>
+                <label for="tourist-spot">Choose a Tourist Spot:</label>
+                <select id="tourist-spot" name="tourist-spot">
+                  <option value="spot-1">Goa</option>
+                  <option value="spot-2">Shimla</option>
+                  <option value="spot-3">Manali</option>
+                  <option value="spot-3">Rishikesh</option>
+                  <option value="spot-3">Jaipur</option>
+                  <option value="spot-3">Assam</option>
+                </select>
+                <label for="date">Select a Date:</label>
+                <input type="date" id="date" name="date">
+                <input type="submit" value="Reserve">
+              </form>
+            </div>
+          </div>
+</body>
+</html>
